@@ -31,7 +31,6 @@ model:
   name: xgboost
   path: ${model.dir}/${model.name}
 
-
-mlflow_tracking_ui: https://dagshub.com/databootcamp2021/employee_future.mlflow
-mlflow_USERNAME: databootcamp2021
-mlflow_PASSWORD: e4a7be0be4b56a7112ad75969ed9cd5f51c57f5d
+mlflow_tracking_ui: https://dagshub.com/NikhilDevassia/customer_churn.mlflow 
+mlflow_USERNAME: NikhilDevassia 
+mlflow_PASSWORD: 2ea48dcd252d551ac30da94737bdb76af748f309 
