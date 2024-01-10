@@ -10,3 +10,4 @@ deepchecks==0.17.5
 pandera==0.18.0
 pytest-steps==1.8.0
 dvc==3.38.1
+bentoml==1.1.11
