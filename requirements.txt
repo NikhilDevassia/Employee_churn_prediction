@@ -6,3 +6,6 @@ hyperopt==0.2.7
 xgboost==2.0.3
 mlflow==2.9.2
 dagshub==0.3.12
+deepchecks==0.17.5
+pandera==0.18.0
+pytest-steps==1.8.0
