@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nikhil/Projects/MLOPS/mlruns/0/ec48806acc1b4991b468fd152b35fd7b/artifacts
+end_time: 1704906433853
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ec48806acc1b4991b468fd152b35fd7b
+run_name: worried-cat-394
+run_uuid: ec48806acc1b4991b468fd152b35fd7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704906431892
+status: 3
+tags: []
+user_id: nikhil

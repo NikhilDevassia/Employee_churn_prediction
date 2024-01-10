@@ -24,4 +24,4 @@ seed: 0
 use_label_encoder: False
 objective: "binary:logistic"
 eval_metric: auc
-early_stopping_rounds: 40
+early_stopping_rounds: 5
