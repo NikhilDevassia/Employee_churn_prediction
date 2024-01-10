@@ -1,0 +1,15 @@
+artifact_uri: file:///home/nikhil/Projects/MLOPS/outputs/2024-01-10/17-20-34/mlruns/0/7c7715555d4f4cf4a8cb2de3eeb97b97/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 7c7715555d4f4cf4a8cb2de3eeb97b97
+run_name: nebulous-panda-353
+run_uuid: 7c7715555d4f4cf4a8cb2de3eeb97b97
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1704887450891
+status: 1
+tags: []
+user_id: nikhil
