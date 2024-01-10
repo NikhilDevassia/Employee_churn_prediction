@@ -38,12 +38,8 @@ def test_xgboost():
     validation_ds = Dataset(test_df, label="LeaveOrNot")
 
     # Define a model error analysis check with a specified minimum error model score
-    check = ModelErrorAnalysis(min_error_model_score=0.3)
+    check = ModelErrorAnalysis(min_error_model_score=0.5)
 
     # Run the model error analysis check on the training and testing datasets with the model
     check.run(train_ds, validation_ds, model)
 
-
-# Main entry point to run the test
-if __name__ == "__main__":
-    test_xgboost()

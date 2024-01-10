@@ -95,6 +95,4 @@ def rename_columns_step(steps_data):
         "ExperienceInCurrentDomain",
     ]
 
-# Main entry point to run the test suite.
-if __name__ == "__main__":
-    test_processs_suite()
+
