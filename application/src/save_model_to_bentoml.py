@@ -1,19 +1,12 @@
-import bentoml
-import hydra
 import joblib
-from hydra.utils import to_absolute_path as abspath
-from omegaconf import DictConfig
+import bentoml
 
+def save_to_bentoml():
+    model_path = "/home/nikhil/Projects/MLOPS/models/xgboost"
+    model = joblib.load(model_path)  # Load the XGBoost model
 
-def load_model(model_path: str):
-    return joblib.load(model_path)
-
-
-@hydra.main(config_path="../../config", config_name="main")
-def save_to_bentoml(config: DictConfig):
-    model = load_model(abspath(config.model.path))
-    # bentoml.picklable_model.save(config.model.name, model)
-    bentoml.xgboost.save(config.model.name, model)
+    # Now save the model object
+    bento_model = bentoml.xgboost.save_model("xgboost", model)
 
 
 if __name__ == "__main__":
