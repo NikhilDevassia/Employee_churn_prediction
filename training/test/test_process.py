@@ -4,6 +4,7 @@ from pytest_steps import test_steps
 
 from training.src.process import get_features, rename_columns
 
+
 # Define a test suite using pytest_steps to organize and execute test steps.
 # This suite consists of two steps: "get_features_step" and "rename_columns_step".
 @test_steps("get_features_step", "rename_columns_step")
@@ -19,6 +20,7 @@ def test_processs_suite(test_step, steps_data):
         get_features_step(steps_data)
     elif test_step == "rename_columns_step":
         rename_columns_step(steps_data)
+
 
 def get_features_step(steps_data):
     """
@@ -74,6 +76,7 @@ def get_features_step(steps_data):
     # Store the processed DataFrame in the steps_data object for later use.
     steps_data.X = X
 
+
 def rename_columns_step(steps_data):
     """
     Test step to validate the 'rename_columns' function.
@@ -94,5 +97,3 @@ def rename_columns_step(steps_data):
         "Age",
         "ExperienceInCurrentDomain",
     ]
-
-

@@ -117,9 +117,7 @@ def optimize(objective: Callable, space: dict):
     )
     print("The best hyperparameters are : ", "\n")
     print(best_hyperparams)
-    best_model = trials.results[
-        np.argmin([r["loss"] for r in trials.results])
-    ]["model"]
+    best_model = trials.results[np.argmin([r["loss"] for r in trials.results])]["model"]
     return best_model
 
 
@@ -147,9 +145,7 @@ def train(config: DictConfig):
     }
 
     # Create a partial function with fixed parameters
-    objective = partial(
-        get_objective, X_train, y_train, X_test, y_test, config
-    )
+    objective = partial(get_objective, X_train, y_train, X_test, y_test, config)
 
     # Find the best model through hyperparameter optimization
     best_model = optimize(objective, space)

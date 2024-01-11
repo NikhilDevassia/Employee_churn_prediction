@@ -44,14 +44,13 @@ def log_metrics(**metrics: dict):
     logger.log_metrics(metrics)
 
 
-@hydra.main( config_path="../../config", config_name="main")
+@hydra.main(config_path="../../config", config_name="main")
 def evaluate(config: DictConfig):
     mlflow.set_tracking_uri(config.mlflow_tracking_ui)
-    os.environ['MLFLOW_TRACKING_USERNAME'] = config.mlflow_USERNAME
-    os.environ['MLFLOW_TRACKING_PASSWORD'] = config.mlflow_PASSWORD
+    os.environ["MLFLOW_TRACKING_USERNAME"] = config.mlflow_USERNAME
+    os.environ["MLFLOW_TRACKING_PASSWORD"] = config.mlflow_PASSWORD
 
     with mlflow.start_run():
-
         # Load data and model
         X_test, y_test = load_data(config.processed)
 

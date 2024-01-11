@@ -42,4 +42,3 @@ def test_xgboost():
 
     # Run the model error analysis check on the training and testing datasets with the model
     check.run(train_ds, validation_ds, model)
-

@@ -1,6 +1,7 @@
 import joblib
 import bentoml
 
+
 def save_to_bentoml():
     model_path = "/home/nikhil/Projects/MLOPS/models/xgboost"
     model = joblib.load(model_path)  # Load the XGBoost model

@@ -6,7 +6,7 @@ from hydra import compose, initialize
 from patsy import dmatrix
 from pydantic import BaseModel
 
-with initialize( config_path="../../config"):
+with initialize(config_path="../../config"):
     config = compose(config_name="main")
     FEATURES = config.process.features
     MODEL_NAME = config.model.name
@@ -36,9 +36,8 @@ def add_dummy_data(df: pd.DataFrame):
 
 
 def rename_columns(X: pd.DataFrame):
-    X.columns = (
-        X.columns.str.replace(r"\[", "_", regex=True)
-        .str.replace(r"\]", "", regex=True)
+    X.columns = X.columns.str.replace(r"\[", "_", regex=True).str.replace(
+        r"\]", "", regex=True
     )
     return X
 
